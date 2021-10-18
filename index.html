@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cálculadora</title>
+</head>
+
+<body>
+    <div class="main"><!--Calc Body-->
+        <form action="" name="calculator">
+
+            <input type="text" class="topbar" name="text1" disabled>
+            <input type="text" class="topbar" name="text2" value="C" onclick="location.reload()">
+            <br>
+            <input type="button" class="numbar" name="btn9" value="9" onclick="displaynum(btn9.value)">
+            <input type="button" class="numbar" name="btn8" value="8" onclick="displaynum(btn8.value)">
+            <input type="button" class="numbar" name="btn7" value="7" onclick="displaynum(btn7.value)">
+            <input type="button" class="sidebar" name="sumbtn" value="+" onclick="displaynum(sumbtn.value)">
+            <br>
+            <input type="button" class="numbar" name="btn6" value="6" onclick="displaynum(btn6.value)">
+            <input type="button" class="numbar" name="btn5" value="5" onclick="displaynum(btn5.value)">
+            <input type="button" class="numbar" name="btn4" value="4" onclick="displaynum(btn4.value)">
+            <input type="button" class="sidebar" name="subbtn" value="-" onclick="displaynum(subbtn.value)">
+            <br>
+            <input type="button" class="numbar" name="btn3" value="3" onclick="displaynum(btn3.value)">
+            <input type="button" class="numbar" name="btn2" value="2" onclick="displaynum(btn2.value)">
+            <input type="button" class="numbar" name="btn1" value="1" onclick="displaynum(btn1.value)">
+            <input type="button" class="sidebar" name="multbtn" value="*" onclick="displaynum(multbtn.value)">
+            <br>
+            <input type="button" class="dot" name="dot" value="." onclick="displaynum(dot.value)">
+            <input type="button" class="numbar" name="btn0" value="0" onclick="displaynum(btn0.value)">
+            <input type="button" class="equal" name="eql" value="=" onclick="topbar.value=eval(topbar.value)">
+            <input type="button" class="footerbar" name="divbtn" value="/" onclick="displaynum(divbtn.value)">
+
+        </form>
+    </div> <!--Calc Body-->
+</body>
+    <!--JS-->
+    <script src="script/script.js"></script>
+    <!--JS-->
+</html>
