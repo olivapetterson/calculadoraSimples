@@ -3,55 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Cálculadora</title>
+    <link rel="shortcut icon" href="/icon/favicon.ico.svg" type="image/x-icon">
+    <title>Simple Calculator</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="script/display.js" type="text/javascript"></script>
+    <script src="script/calc.js" type="text/javascript"></script>
+    <script src="script/script.js" type="text/javascript" defer></script>
 </head>
 
-<!--  $("#text3").click(function(){
-        var input_novo_valor = $("#idInput").text().slice(0,-1); 
-        $("#idInput").val(input_novo_valor);
-    }); -->
-
 <body>
-    <div class="darkmode">
-        <button></button>
+    <div class="content">
+        <div class="calculator">
+            <div class="display">
+                <div id="prev"></div>
+                <div id="current"></div>
+            </div>
+            <button class="bigger" onclick="display.clear()">C</button>
+            <button onclick="display.delete()">&larr;</button>
+            <button class="operator" value="divide">/</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator" value="multiply">*</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator" value="sub">-</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator" value="sum">+</button>
+            <button class="bigger number">0</button>
+            <button class="number">.</button>
+            <button class="operator" value="equal">=</button>
+        </div>
     </div>
-
-    <div class="main"><!--Calc Body-->
-        <form action="" name="calculator">
-
-            <input type="text" class="result" name="text1" disabled>
-            <br>
-            <input type="button" class="clearbtn" name="text2" value="C" onclick="location.reload()">
-            <input type="button" class="delbtn" name="percbtn" value="%" onclick="percbtn.value">
-            
-            <input type="button" class="numbar" name="btn9" value="9" onclick="displaynum(btn9.value)">
-            <input type="button" class="numbar" name="btn8" value="8" onclick="displaynum(btn8.value)">
-            <input type="button" class="numbar" name="btn7" value="7" onclick="displaynum(btn7.value)">
-            <input type="button" class="sidebar" name="sumbtn" value="+" onclick="displaynum(sumbtn.value)">
-            
-            <input type="button" class="numbar" name="btn6" value="6" onclick="displaynum(btn6.value)">
-            <input type="button" class="numbar" name="btn5" value="5" onclick="displaynum(btn5.value)">
-            <input type="button" class="numbar" name="btn4" value="4" onclick="displaynum(btn4.value)">
-            <input type="button" class="sidebar" name="subbtn" value="-" onclick="displaynum(subbtn.value)">
-            
-            <input type="button" class="numbar" name="btn3" value="3" onclick="displaynum(btn3.value)">
-            <input type="button" class="numbar" name="btn2" value="2" onclick="displaynum(btn2.value)">
-            <input type="button" class="numbar" name="btn1" value="1" onclick="displaynum(btn1.value)">
-            <input type="button" class="sidebar" name="multbtn" value="*" onclick="displaynum(multbtn.value)">
-            
-            <input type="button" class="dot" name="dot" value="." onclick="displaynum(dot.value)">
-            <input type="button" class="numbar" name="btn0" value="0" onclick="displaynum(btn0.value)">
-            <input type="button" class="equal" name="eql" value="=" onclick="text1.value=eval(text1.value)">
-            <input type="button" class="footerbar" name="divbtn" value="/" onclick="displaynum(divbtn.value)">
-
-        </form>
-    </div> <!--Calc Body-->
 </body>
-    <!--JS-->
-    <script src="script/script.js"></script>
-    <!--JS-->
+
 </html>

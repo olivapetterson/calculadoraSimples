@@ -4,9 +4,8 @@
 
 <p>Abaixo tópicos que serão utilizados na <strong>criação/conclusão</strong> do projeto:</p>
 <ul>
-<li>Design moderno;</li>
-<li>Modo escuro;</li>
-<li>Responsividade;</li>
-<li>SEO</li>
+<li>Modern design;</li>
+<li>Dark mode;</li>
+<li>Responsive design;</li>>
 </ul>
 

@@ -1,8 +1,16 @@
-function displaynum(n1){
-    calculator.text1.value = calculator.text1.value + n1;
-}
+//putting the functions on the buttons in html
 
-$("#text3").click(function(){
-    var input_novo_valor = $("#calculator").text().slice(0,-1); 
-    $("#calculator").val(input_novo_valor);
+const displayPrev = document.getElementById('prev');
+const displayCurrent = document.getElementById('current');
+const btnNumber = document.querySelectorAll('.number');
+const btnOperator = document.querySelectorAll('.operator');
+
+const display = new Display(displayPrev, displayCurrent);
+
+btnNumber.forEach(button => {
+    button.addEventListener('click', () => display.addNum(button.innerHTML));
+});
+
+btnOperator.forEach(button => {
+    button.addEventListener('click', () => display.compute(button.value))
 });

@@ -1,43 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-:root{
-    --base-color: rgb(0, 206, 137);
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
 }
 
-.main{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;  
 }
 
-form{
-    width: 40%;
-    height: 60vh;
-    margin: 10%;
+.calculator{
+    width: auto;
+    height: auto;
+    margin: 9rem 25%;
     padding: 15px;
     border-radius: 30px;
     box-shadow: 3px 3px 10px rgb(0, 206, 137);
     display: grid;
-    grid-template-columns: repeat(4,25%);
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 8rem repeat(5, 75px);
+    padding: 1rem;
 }
 
-.result{
-    width: 20rem;
+button {
+    cursor: pointer;
+    padding-bottom: 1rem;
+    font-size: 2.3em;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
 }
 
-.clearbtn{
-    color: var(--base-color);
+button:active {
+    background-color: #006f54;
 }
 
-.numbar{
-    color: red;
+button:focus {
+    outline: none;
+}
+
+.bigger {
+    grid-column: span 2;
+}
+
+.display {
+    color: white;
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #363636;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000033;
+}
+
+#current {
+    font-size: 1.5em;
+}
+
+#prev {
+    font-size: 2em;
 }
